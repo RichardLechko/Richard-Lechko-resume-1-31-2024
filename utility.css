@@ -14,6 +14,31 @@
     margin: 10px;
   }
 
+  /********* BACK TO TOP ********/
+  /********* BACK TO TOP ********/
+  /********* BACK TO TOP ********/
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  z-index: 2;
+}
+
+.back-to-top span {
+  transition: 0.2s ease-out;
+}
+
+.back-to-top:hover span{
+  transform: translateY(-6px);
+}
+
 /************ UTILITY ***********/
 /************ UTILITY ***********/
 /************ UTILITY ***********/
