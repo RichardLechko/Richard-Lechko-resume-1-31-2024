@@ -54,9 +54,6 @@ section {
 }
 
 .container {
-  /* width: 100%;
-    margin: 2em auto;
-    padding: 0 2.5rem; */
   width: 100%;
   margin: 2em auto;
 
@@ -74,7 +71,6 @@ section {
 .title {
   background-color: var(--gray);
   gap: 1em;
-  outline: 1px solid red;
 }
 
 .header1:hover {
@@ -95,10 +91,11 @@ header {
 
   background-color: var(--gray);
   padding-bottom: 50px;
+  background-color: black;
 }
 
 nav {
-  outline: 1px solid red;
+  
   display: flex;
   background-color: var(--gray);
   align-items: center;
