@@ -14,6 +14,7 @@
 *,
 *::before,
 *::after {
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -53,27 +54,43 @@ section {
 }
 
 .container {
+    /* width: 100%;
+    margin: 2em auto;
+    padding: 0 2.5rem; */
     width: 100%;
-    margin: 0 auto;
-    padding: 0 2.5rem;
+  margin: 2em auto;
+  border: solid 0.0625em silver;
+  justify-content: space-around;
+  padding: 1em;
+  display: flex;
+  flex-flow: wrap;
+  gap: 1em;
 }
 
 /************ HEADER ************/
 /************ HEADER ************/
 /************ HEADER ************/
 
+.title {
+    
+    gap: 1em;
+}
+
 header {
     width: 100%;
     height: 8.5rem;
-    padding: 2rem 0;
+    padding: 2rem;
     background-color: var(--gray);
+    
     position: relative;
 }
 
 nav {
     display: flex;
-    
+    background-color: var(--gray);
     align-items: center;
+   
+    
     justify-content: space-between;
     
 }
@@ -213,6 +230,7 @@ nav {
 
 .skills-grid {
     display: flex;
+    margin: auto;
 }
 
 .skills-grid > *:nth-child(2) {
@@ -244,28 +262,49 @@ nav {
     outline: 1px solid #000;
 }
 
-/******** EXPERIENCE *********/
-/******** EXPERIENCE *********/
-/******** EXPERIENCE *********/
+/********** WORK EXPERIENCE *********/
+/********** WORK EXPERIENCE *********/
+/********** WORK EXPERIENCE *********/
 
-.exp-text p {
+.work-text dd {
     color: var(--dark-violet);
     margin-bottom: 25px;
     font-size: 2.4rem;
     line-height: 3.95rem;
 }
 
-.exp-text span {
+.work-text dt {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 2.65rem;
+    line-height: 3.95rem;
+    font-weight: bold;
+}
+
+
+
+/******** EDUCATION *********/
+/******** EDUCATION *********/
+/******** EDUCATION *********/
+
+.edu-text p {
+    color: var(--dark-violet);
+    margin-bottom: 25px;
+    font-size: 2.4rem;
+    line-height: 3.95rem;
+}
+
+.edu-text span {
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
 }
 
-.exp-text a {
+.edu-text a {
     text-decoration: none;
     color: #054696;
 }
 
-.exp-text #uni {
+.edu-text #uni {
     color: #E4002B;
 }
 
@@ -276,6 +315,7 @@ nav {
 .footer {
     background-color: #002240;
     color: #fff;
+    width: 100%;
 }
 
 .footer .social a {
