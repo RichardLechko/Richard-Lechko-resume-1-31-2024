@@ -1,138 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/34df5f9c2a.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
-    <title>Contact Me</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="utility.css">
+        <link rel="stylesheet" href="https://kit.fontawesome.com/34df5f9c2a.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+        <title>Contact Me</title>
+    </head>
 
-<body>
+    <body>
 
-    <header>
+        <header>
 
-        <div class="container">
-            <nav>
-                <h1 class="xl text-center">Contact Me</h1>
-                <ul class="nav-ul">
-                    <li><a href="index.html" class="btn">About Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <div class="contact-section contact-wrapper">
-
-        <form name="register" class="contact-form" action="subscriberform.php" method="get">
-            <div class="contact-heading">
-
-                <p>
-                    I am interested in internships in the tech industry, specifically for Web Development or Front End
-                    Development, and any free lancing opportunities — big or
-                    small. Please use this form to get in contact with me.
-                </p>
+            <div class="container">
+                <nav>
+                    <h1 class="xl text-center">Contact Me</h1>
+                    <ul class="nav-ul">
+                        <li><a href="index.html" class="btn">About Me</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
-            <div class="form-input-wrapper">
+
+        <div class="contact-section contact-wrapper">
+
+            <form name="register" class="contact-form" action="subscriberform.php" method="get">
+                <div class="contact-heading">
+
+                    <p>
+                        I am interested in internships in the tech industry, specifically for Web Development or Front
+                        End
+                        Development, and any free lancing opportunities — big or
+                        small. Please use this form to get in contact with me.
+                    </p>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <div class="form-input-group">
+                        <input type="text" placeholder="Full Name" name="name" class="name" />
+                        <span></span>
+                    </div>
+                    <div class="form-input-group">
+                        <input type="email" name="email" placeholder="Email" class="email" />
+                        <span></span>
+                    </div>
+                </div>
                 <div class="form-input-group">
-                    <input type="text" placeholder="Full Name" name="name" class="name" />
+                    <input type="text" placeholder="Subject" class="subject" name="subject" />
                     <span></span>
                 </div>
                 <div class="form-input-group">
-                    <input type="email" name="email" placeholder="Email" class="email" />
+                    <textarea type="text" placeholder="Message/Questions" class="textarea" name="message"></textarea>
                     <span></span>
                 </div>
-            </div>
-            <div class="form-input-group">
-                <input type="text" placeholder="Subject" class="subject" name="subject" />
-                <span></span>
-            </div>
-            <div class="form-input-group">
-                <textarea type="text" placeholder="Message/Questions" class="textarea" name="message"></textarea>
-                <span></span>
-            </div>
-            <div class="message"></div>
-            <button type="submit" class="contact-button submit-button" name="submit">
-                <div>
-                    <span class="bg"></span>
-                    <span class="base"></span>
-                    <span class="text">
-                        Send Message!
+                <div class="message"></div>
+                <button type="submit" class="contact-button submit-button" name="submit">
+                    <div>
+                        <span class="bg"></span>
+                        <span class="base"></span>
+                        <span class="text">
+                            Send Message!
+                        </span>
+                    </div>
+                </button>
+            </form>
+
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142813.5467710895!2d-91.90596940123463!3d39.71372494989672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois!5e0!3m2!1sen!2sus!4v1691347136273!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="map-content">
+                    <p>Richard Lechko</p>
+                    <span>
+                        Illinois, U.S.A
+                        <br />
+                        8916 W 140th Street, Orland Park, IL
                     </span>
-                </div>
-            </button>
-        </form>
-
-        <div class="google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142813.5467710895!2d-91.90596940123463!3d39.71372494989672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois!5e0!3m2!1sen!2sus!4v1691347136273!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <div class="map-content">
-                <p>Richard Lechko</p>
-                <span>
-                    Illinois, U.S.A
                     <br />
-                    8916 W 140th Street, Orland Park, IL
-                </span>
-                <br />
-                <span>@: richardlechko@gmail.com</span>
+                    <span>@: richardlechko@gmail.com</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer class="footer bg-dark py-5">
-        <div class="container">
-            <div>
-                <h1>About Me ~ R.L.
-                </h1>
-                <p>Copyright &copy; 2023</p>
+        <footer class="footer bg-dark py-5">
+            <div class="container-footer">
+                <div>
+                    <h1 class="headertitle">About Me ~ Richard Lechko.
+                    </h1>
+                    <p>Copyright &copy; 2024</p>
+                </div>
+                <nav id="footer-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#personal-life">Personal Life</a></li>
+                        <li><a href="#technical-skills">Skills</a></li>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://github.com/RichardLechko" target="_blank"><img src="images/github2.png" alt=""
+                            class="github"></a>
+                    <a href="https://www.linkedin.com/in/richard-lechko/" target="_blank"><img src="images/linkedin.png"
+                            class="linkedin" alt=""></a>
+                    <a href="https://open.spotify.com/user/22j4lmvcuabn2joznuzxd3pdy?si=be67aa3576934843"
+                        target="_blank"><img src="images/spotify.png" alt="" class="spotify"></a>
+                    <a href="https://soundcloud.com/richardlechko" target="_blank"><img src="images/soundcloud.png"
+                            alt="" class="soundcloud">
+                    </a>
+                </div>
+                <div id="lastModifiedText">
+                    <br>
+                    <p id="lastModifiedTxt">
+                        <script>
+                            var latestDate = new Date(document.lastModified);
+                            document.getElementById("lastModifiedTxt").innerHTML = "Last Modified: " + latestDate;
+                        </script>
+                    </p>
+                </div>
             </div>
-            <nav id="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#personal-life">Personal Life</a></li>
-                    <li><a href="index.html#technical-skills">Technical Skills</a></li>
-                    <li><a href="index.html#experience">Experience</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="https://github.com/Richardlllll" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/richard-lechko/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://open.spotify.com/user/22j4lmvcuabn2joznuzxd3pdy?si=be67aa3576934843" target="_blank"><i
-                        class="fa-brands fa-spotify"></i></a>
-                <a href="https://soundcloud.com/richardlechko" target="_blank"><i class="fa-brands fa-soundcloud"></i>
-                </a>
-            </div>
-
-            <div id="lastModifiedText">
-                <br>
-                <p id="lastModifiedTxt">
-                    <script>
-
-                        var latestDate = new Date(document.lastModified);
-                        document.getElementById("lastModifiedTxt").innerHTML = "Last Modified: " + latestDate;
-
-
-                    </script>
-                </p>
-
-
-            </div>
-
-
-        </div>
-
-    </footer>
+        </footer>
 
 
 
@@ -142,6 +137,6 @@
 
 
 
-</body>
+    </body>
 
 </html>
