@@ -6,104 +6,136 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="utility.css">
-        <link rel="stylesheet" href="https://kit.fontawesome.com/34df5f9c2a.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
-        <title>Contact Me</title>
+        <link rel="stylesheet" href="https://kit.fontawesome.com/34df5f9c2a.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" />
+        <script src="index.js"></script>
+        <title>Contact Me ~ Richard Lechko</title>
     </head>
 
     <body>
 
-        <header>
 
-            <div class="container">
-                <nav>
-                    <h1 class="xl text-center">Contact Me</h1>
-                    <ul class="nav-ul">
-                        <li><a href="index.html" class="btn">About Me</a></li>
-                    </ul>
-                </nav>
+        <section class="header">
+
+
+
+            <div class="flex head">
+                <div class="headertitle">
+                    <h1 class="containerhead xl">Contact Me ~ Richard Lechko.</h1>
+                </div>
+
+                <div class="card header1">
+                    <a href="index.html#personal-life" class="header-link">
+                        <h4>Personal Life</h4>
+                    </a>
+
+                </div>
+                <div class="card header1">
+                    <a href="index.html#technical-skills" class="header-link">
+                        <h4>Skills</h4>
+                    </a>
+                </div>
+                <div class="card header1">
+                    <a href="index.html#work-experience" class="header-link">
+                        <h4>Work Experience</h4>
+                    </a>
+
+                </div>
+                <div class="card header1">
+                    <a href="index.html#education" class="header-link">
+                        <h4>Education</h4>
+                    </a>
+                </div>
+                <div class="card header1">
+                    <a href="index.html" class="header-link">
+                        <h4>Home</h4>
+                    </a>
+
+                </div>
+
+
             </div>
-        </header>
 
 
-        <div class="contact-section contact-wrapper">
+            <a href="#" class="back-to-top">
+                <span class="up"><img src="images/892692.png" alt=""></span>
+            </a>
+        </section>
 
-            <form name="register" class="contact-form" action="subscriberform.php" method="get">
-                <div class="contact-heading">
+        <section class="contact-p">
+            <p>I am currently looking for any projects — big or small. Don't be afriad to reach out.
+                Whether that be a job opportunity, a freelance opportunity, or a simple project.</p>
+        </section>
 
-                    <p>
-                        I am interested in internships in the tech industry, specifically for Web Development or Front
-                        End
-                        Development, and any free lancing opportunities — big or
-                        small. Please use this form to get in contact with me.
-                    </p>
-                </div>
 
-                <div class="form-input-wrapper">
-                    <div class="form-input-group">
-                        <input type="text" placeholder="Full Name" name="name" class="name" />
-                        <span></span>
+        <section class="contact-form">
+
+            <h1 class="heading">Get In Touch!</h1>
+
+            <div class="contactForm">
+                <form action="https://formspree.io/f/xkndoqdk" method="POST">
+                    <input type="text" class="input" placeholder="your name" required>
+                    <input type="text" class="input" placeholder="your email" required>
+                    <input type="text" class="input" placeholder="your Subject" required>
+                    <textarea class="input" cols="30" rows="5" placeholder="Your message..." required></textarea>
+                    <input type="submit" class="input submit" value="Send Message">
+                </form>
+
+                <div class="map-container">
+                    <div class="mapBg"></div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142813.576170073!2d-91.90600004917333!3d39.713724304638475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois!5e0!3m2!1sen!2sus!4v1706425940489!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     </div>
-                    <div class="form-input-group">
-                        <input type="email" name="email" placeholder="Email" class="email" />
-                        <span></span>
-                    </div>
-                </div>
-                <div class="form-input-group">
-                    <input type="text" placeholder="Subject" class="subject" name="subject" />
-                    <span></span>
-                </div>
-                <div class="form-input-group">
-                    <textarea type="text" placeholder="Message/Questions" class="textarea" name="message"></textarea>
-                    <span></span>
-                </div>
-                <div class="message"></div>
-                <button type="submit" class="contact-button submit-button" name="submit">
-                    <div>
-                        <span class="bg"></span>
-                        <span class="base"></span>
-                        <span class="text">
-                            Send Message!
-                        </span>
-                    </div>
-                </button>
-            </form>
-
-            <div class="google-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142813.5467710895!2d-91.90596940123463!3d39.71372494989672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois!5e0!3m2!1sen!2sus!4v1691347136273!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <div class="map-content">
-                    <p>Richard Lechko</p>
-                    <span>
-                        Illinois, U.S.A
-                        <br />
-                        8916 W 140th Street, Orland Park, IL
-                    </span>
-                    <br />
-                    <span>@: richardlechko@gmail.com</span>
                 </div>
             </div>
-        </div>
+
+            <div class="contactMethod">
+                <div class="method">
+                    <i class="fa-solid fa-location-dot contactIcon"></i>
+                    <article class="text">
+                        <h1 class="sub-heading">Location</h1>
+                        <p class="para">Orland Park, IL</p>
+                    </article>
+                </div>
+
+                <div class="method">
+                    <i class="fa-solid fa-envelope contactIcon"></i>
+                    <article class="text">
+                        <h1 class="sub-heading">Email</h1>
+                        <p class="para">Email: richardlechko@gmail.com</p>
+                    </article>
+                </div>
+
+                <div class="method">
+                    <i class="fa-solid fa-phone contactIcon"></i>
+                    <article class="text">
+                        <h1 class="sub-heading">Phone</h1>
+                        <p class="para">(708)-262-7174</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer bg-dark py-5">
             <div class="container-footer">
                 <div>
-                    <h1 class="headertitle">About Me ~ Richard Lechko.
+                    <h1 class="headertitle">Contact Me ~ Richard Lechko
                     </h1>
-                    <p>Copyright &copy; 2024</p>
+                    <p id="copyright">Copyright &copy; 2024</p>
                 </div>
                 <nav id="footer-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#personal-life">Personal Life</a></li>
-                        <li><a href="#technical-skills">Skills</a></li>
-                        <li><a href="#work-experience">Work Experience</a></li>
-                        <li><a href="#education">Education</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#personal-life">Personal Life</a></li>
+                        <li><a href="index.html#technical-skills">Skills</a></li>
+                        <li><a href="index.html#work-experience">Work Experience</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html">Home</a></li>
                     </ul>
                 </nav>
                 <div class="social">
@@ -128,14 +160,6 @@
                 </div>
             </div>
         </footer>
-
-
-
-
-
-
-
-
 
     </body>
 

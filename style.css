@@ -9,6 +9,12 @@
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
   --white: #fff;
+  --bodyBg: #303841;
+  --formBg: #343f4b;
+  --textColor: #fff;
+  --primaryColor: #0076a3;
+  --paraColor: #5e6c79;
+  --paraColor: #74828f;
 }
 
 *,
@@ -42,10 +48,19 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+#contact-p {
   font-size: 1.6rem;
   color: var(--grayish-violet);
   line-height: 1.6;
+}
+
+.contact-p p {
+  color: var(--dark-violet);
+  margin-bottom: 25px;
+  font-size: 2.4rem;
+  line-height: 2em;
+  text-align: center;
 }
 
 section {
@@ -69,19 +84,20 @@ section {
 
 .header {
   background-color: var(--gray);
-
-  display: flex;
 }
 
-.headertitle,
+.headertitle {
+  padding-right: 50px;
+  font-family: monospace;
+}
+
 .footertitle {
   font-family: monospace;
 }
 
 .containerhead {
   width: 100%;
-  margin: 0.75em auto;
-  padding: 0px 4em 0px 0em;
+
   display: flex;
   flex-flow: wrap;
   gap: 1em;
@@ -89,7 +105,6 @@ section {
 
 .head {
   width: 100%;
-  margin: 2em;
 }
 
 .header .card:hover {
@@ -108,16 +123,157 @@ section {
 /********* CONTACT *********/
 /********* CONTACT *********/
 
-.contact-ul {
-  font-size: 18px;
-  list-style-type: none;
+.contact-h1 {
+  text-align: center;
+}
+
+.contact-text p {
+  color: var(--white);
+  margin-bottom: 25px;
+  font-size: 2.4rem;
+  line-height: 2em;
 }
 
 .contact {
+  font-family: monospace;
+  color: var(--textColor);
+  background: var(--bodyBg);
+  padding-bottom: 5em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.sectionHeader {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primaryColor);
+  margin-bottom: 0.5em;
+}
+
+.heading,
+.sub-heading {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 2.5em;
+}
+
+.sub-heading {
+  text-align: left;
+}
+
+.contactForm {
+  display: grid;
+  gap: 3em;
+}
+
+form {
   width: 100%;
-  height: 7.5rem;
-  padding: 2rem 0;
-  background-color: var(--gray);
+  margin-top: 3em;
+}
+
+.para {
+  color: var(--paraColor);
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.imgInput {
+  background: url(images/send.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.para2 {
+  text-align: left;
+}
+
+.input {
+  width: 95%;
+  
+  max-width: 700px;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1em;
+  outline: none;
+  background-color: var(--formBg);
+  color: var(--white);
+  border-radius: 10px;
+  border: 1px solid rgb(53, 53, 53);
+  margin-bottom: 1em;
+}
+
+.input:focus {
+  border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder {
+  text-transform: capitalize;
+}
+
+.submit {
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--textColor);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.mapBg {
+  position: absolute;
+  background-color: var(--primaryColor);
+  top: 0;
+  left: 50em;
+  right: 0;
+  width: 200px;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.map {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
+
+.contactMethod {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.method {
+  display: flex;
+  align-items: center;
+}
+
+.contactIcon {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  width: 70px;
 }
 
 /************* PERSONAL LIFE ***********/
@@ -277,9 +433,15 @@ span img {
 /****** FOOTER *********/
 /****** FOOTER *********/
 
+#copyright {
+  padding-bottom: 15px;
+}
+
 .footer {
   background-color: #002240;
   color: #fff;
+  padding-bottom: 0px;
+  margin: 0px;
 }
 
 .footer h1 {
@@ -296,13 +458,17 @@ span img {
 
 .footer li a {
   color: white;
-  margin: 10px 10px 10px 0px;
+
   font-size: 14px;
 }
 
 #footer-links a {
   font-size: 2rem;
-  padding-bottom: 25px;
+}
+
+#footer-links {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .footer li a:hover {
